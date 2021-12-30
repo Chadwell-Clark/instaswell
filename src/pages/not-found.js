@@ -5,7 +5,7 @@ import Layout from "../components/shared/Layout.js";
 
 function NotFoundPage() {
   return (
-    <Layout title="Page Not Found" marginTop={120}>
+    <Layout minimalNavbar title="Page Not Found" marginTop={120}>
       <Typography variant="h5" align="center" paragraph>
         Sorry, this page is not available.
       </Typography>
