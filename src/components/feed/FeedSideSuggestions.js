@@ -1,5 +1,5 @@
+import React from "react";
 import { Paper, Typography } from "@material-ui/core";
-import React, { useState } from "react";
 import { getDefaultUser } from "../../data";
 import { useFeedSideSuggestionsStyles } from "../../styles";
 import UserCard from "../shared/UserCard";
@@ -27,7 +27,7 @@ function FeedSideSuggestions() {
         {loading ? (
           <LoadingIcon />
         ) : (
-          Array.from({ length: 5 }, () => getDefaultUser).map((user) => (
+          Array.from({ length: 5 }, () => getDefaultUser()).map((user) => (
             <div key={user.id} className={classes.card}>
               <UserCard user={user} />
               <FollowButton side />
