@@ -41,7 +41,7 @@ function App() {
           <PostPage />
         </Route>
         <Route path="/accounts/edit">
-          <EditProfilePage />
+          <EditProfilePage history={history} />
         </Route>
         <Route path="/accounts/login">
           <LoginPage />
