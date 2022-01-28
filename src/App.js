@@ -21,7 +21,7 @@ function App() {
     if (history.action !== "POP" && !modal) {
       prevLocation.current = location;
     }
-  }, [location, modal]);
+  }, [location, modal]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const isModalOpen = modal && prevLocation.current !== location;
 
