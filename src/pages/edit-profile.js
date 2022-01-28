@@ -20,7 +20,7 @@ function EditProfilePage({ history }) {
   const classes = useEditProfilePageStyles();
   const path = history.location.pathname;
   const [showDrawer, setDrawer] = useState(false);
-  const [show, set] = useState(false);
+  //const [show, set] = useState(false);
 
   function handleToggleDrawer() {
     //setDrawer(prev => !prev);
