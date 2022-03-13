@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Switch, Route, useHistory, useLocation } from "react-router-dom";
+
 import FeedPage from "./pages/feed.js";
 import ExplorePage from "./pages/explore.js";
 import EditProfilePage from "./pages/edit-profile.js";
@@ -21,7 +22,7 @@ function App() {
     if (history.action !== "POP" && !modal) {
       prevLocation.current = location;
     }
-  }, [location, modal]);
+  }, [location, modal]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const isModalOpen = modal && prevLocation.current !== location;
 

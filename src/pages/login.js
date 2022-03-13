@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
+
 import SEO from "../components/shared/Seo";
 import { useLoginPageStyles } from "../styles";
 import FacebookIconBlue from "../images/facebook-icon-blue.svg";
