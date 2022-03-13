@@ -11,6 +11,8 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Link, useHistory } from "react-router-dom";
+import { useNProgress } from "@tanem/react-nprogress";
+
 import logo from "../../images/logo.png";
 import {
   LoadingIcon,
@@ -25,7 +27,6 @@ import {
 import { defaultCurrentUser, getDefaultUser } from "../../data";
 import NotificationTooltip from "../notification/NotificationTooltip";
 import NotificationList from "../notification/NotificationList";
-import { useNProgress } from "@tanem/react-nprogress";
 
 function Navbar({ minimalNavbar }) {
   const classes = useNavbarStyles();

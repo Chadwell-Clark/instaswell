@@ -1,6 +1,8 @@
 import React from "react";
+
 import { useLoadingScreenStyles } from "../../styles";
 import { LogoLoadingIcon } from "../../icons";
+
 function LoadingScreen() {
   const classes = useLoadingScreenStyles();
 

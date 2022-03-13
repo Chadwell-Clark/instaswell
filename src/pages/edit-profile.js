@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import { Menu } from "@material-ui/icons";
 import React, { useState } from "react";
+
 import Layout from "../components/shared/Layout";
 import ProfilePicture from "../components/shared/ProfilePicture";
 import { defaultCurrentUser } from "../data";

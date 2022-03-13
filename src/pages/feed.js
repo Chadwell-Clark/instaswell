@@ -1,13 +1,15 @@
 import React, { useState, lazy, Suspense } from "react";
-import Layout from "../components/shared/Layout";
-import UserCard from "../components/shared/UserCard";
+import { Hidden } from "@material-ui/core";
+
 import { useFeedPageStyles } from "../styles";
+import UserCard from "../components/shared/UserCard";
+import Layout from "../components/shared/Layout";
 import { getDefaultPost } from "../data.js";
 import FeedPostSkeleton from "../components/feed/FeedPostSkeleton";
 import FeedSideSuggestions from "../components/feed/FeedSideSuggestions";
-import { Hidden } from "@material-ui/core";
 import LoadingScreen from "../components/shared/LoadingScreen";
 import { LoadingLargeIcon } from "../icons";
+
 const FeedPost = lazy(() => import("../components/feed/FeedPost"));
 
 function FeedPage() {
